@@ -8,14 +8,39 @@
 
     <link rel="stylesheet" href='./CSS/style.css'>
 </head>
-    <div class="scores">
+    <!-- <div class="scores">
         <a href="scores.html">View Highscores</a>
-    </div>
+    </div> -->
 
-    <div class="time">Time:
+    <div class="timer">Time:
         <span id="time">0</span>
     </div>
 
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit.</p>
+            <button id="start">Start Quiz</button>
+        </div>
+
+        <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+        </div>
+
+        <div id="end-screen" class="hide">
+            <h2>All done!</h2>
+            <p>Your final Score Is <span id="final-score"></span>.</p>
+            <p>
+                Enter initials: <input type="text" id="initials" max="3" />
+                <button id="submit">Submit</button>
+            </p>
+        </div>
+
+        <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="./JS/question.js"></script>
     
 <body>
     
